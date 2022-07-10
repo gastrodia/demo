@@ -693,6 +693,7 @@ const toggle = () => active.value = unref(active) === 'itemA' ? 'itemB' : 'itemA
 | `teleport`                                                                 | 内置传送门组件                                                                           |
 | `Suspense`                                                                 | 异步组件                                                                              |
 | `customRef`                                                                | 自定义Ref                                                                            |
+| `v-memo`                                                                      | 性能优化的指令                                                                           |
 | 函数式组件                                                                      | 可以使用jsx语法                                                                         |
 | [`defineCustomElement`](https://www.cnblogs.com/coderDemo/p/16426216.html) | 在`Vue3.2`中使用[`Web Components`](https://www.cnblogs.com/coderDemo/p/16424555.html) |
 | ...                                                                        | ...                                                                               |
