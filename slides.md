@@ -31,7 +31,7 @@ css: unocss
 </div>
 
 <div class="abs-br m-6 flex gap-2">
-  <a href="https://gitee.com/boolean-true/demo" target="_blank" alt="GitHub"
+  <a href="https://github.com/gastrodia/demo" target="_blank" alt="GitHub"
     class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
@@ -688,15 +688,15 @@ const toggle = () => active.value = unref(active) === 'itemA' ? 'itemB' : 'itemA
 
 # Learn More
 
-|                                                                            |                                                                                   |
-|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| `teleport`                                                                 | 内置传送门组件                                                                           |
-| `Suspense`                                                                 | 异步组件                                                                              |
-| `customRef`                                                                | 自定义Ref                                                                            |
-| `v-memo`                                                                      | 性能优化的指令                                                                           |
-| 函数式组件                                                                      | 可以使用jsx语法                                                                         |
-| [`defineCustomElement`](https://www.cnblogs.com/coderDemo/p/16426216.html) | 在`Vue3.2`中使用[`Web Components`](https://www.cnblogs.com/coderDemo/p/16424555.html) |
-| ...                                                                        | ...                                                                               |
+|                                                                            |                                                                                      |
+|----------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [`teleport`](https://github.com/webfansplz/vuejs-challenges/issues/68)     | 内置传送门组件                                                                              |
+| [`Suspense`](https://www.cnblogs.com/coderDemo/p/16381552.html)            | 异步组件                                                                                 |
+| [`customRef`](https://github.com/webfansplz/vuejs-challenges/issues/95)    | 自定义Ref  (Demo: [实现本地存储函数](https://github.com/webfansplz/vuejs-challenges/issues/96)) |
+| `v-memo`                                                                   | 性能优化的指令                                                                              |
+| [函数式组件](https://github.com/webfansplz/vuejs-challenges/issues/392)         | 可以使用jsx语法                                                                            |
+| [`defineCustomElement`](https://www.cnblogs.com/coderDemo/p/16426216.html) | 在`Vue3.2`中使用[`Web Components`](https://www.cnblogs.com/coderDemo/p/16424555.html)    |
+| ...                                                                        | ...                                                                                  |
 
 ---
 layout: center

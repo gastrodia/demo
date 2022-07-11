@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {defineAsyncComponent, ref, unref} from 'vue'
+import {defineAsyncComponent, ref, unref, Transition} from 'vue'
 import type {Component} from 'vue'
 
 interface GroupCom {
@@ -25,9 +25,14 @@ const toggle = () => active.value = unref(active) === 'itemA' ? 'itemB' : 'itemA
         outline="!none"
         hover:bg="gray-400 opacity-20"
         @click="toggle">toggle</button></div>
-    <transition name="fade" mode="out-in">
-      <Component :is="groupCom[active]"/>
-    </transition>
+    <Transition name="fade" mode="out-in">
+      <Suspense>
+        <Component :is="groupCom[active]"/>
+        <template #fallback>
+          loading ...
+        </template>
+      </Suspense>
+    </Transition>
   </div>
 </template>
 
